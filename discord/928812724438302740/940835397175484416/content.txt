@@ -1,0 +1,14 @@
+@Sneaky Peeky Ping 
+
+```json
+{
+  "name": "Enemy Cell",
+  "save_code": "edevenemy",
+  "collision": {
+    "can_collide": true,
+    "parameters": {
+      "all": "coll-destroy self-destroy"
+    }
+  }
+}
+```
