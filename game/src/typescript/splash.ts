@@ -1,0 +1,23 @@
+export const splashText = [
+	"Boom, Schematell!",
+	"May 1!",
+	"Impossible!",
+	"Join the discord!",
+	"How is it out?",
+	"Woohoo!",
+	"It's out?",
+	"Made by Eclipse!",
+	"Open source!",
+	"Check out CMMM+!",
+	"Trash Cell will not be added. Make it yourself.",
+	"Stop asking me to add cells.",
+	"mfs asking for cells, meanwhile they got an editor for them",
+	"STOP ASKING ME TO ADD CCW ROTATOR",
+	"This message is for Inferno only",
+	"Check out Quell Machine!",
+	"Check out Jell Machine!",
+	"Check out The Puzzle Cell!",
+	"Check out CMMM!",
+	"Check out CelLua!",
+	"Calion is a cool person"
+]

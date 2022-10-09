@@ -1,0 +1,226 @@
+@font-face {
+	font-family: "Fredoka-Light";
+	src: url('./../../assets/fonts/Fredoka-Light.ttf');
+}
+@font-face {
+	font-family: "Fredoka-Regular";
+	src: url('./../../assets/fonts/Fredoka-Regular.ttf');
+}
+@font-face {
+	font-family: "SCP-Light";
+	src: url('./../../assets/fonts/SourceCodePro-Light.ttf');
+}
+@font-face {
+	font-family: "SCP-Regular";
+	src: url('./../../assets/fonts/SourceCodePro-Regular.ttf');
+}
+
+$image_size: 45px;
+body {
+	background-color: #222;
+}
+
+.cell {
+	width: $image_size;
+	height: $image_size;
+
+	// i sure do love this, totally.
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.crispedges {
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.container {
+	background-color: #555;
+	margin: auto;
+
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@keyframes mover {
+	0%, 100% {
+		transform: rotate(5deg);
+	}
+	50% {
+		transform: rotate(-5deg);
+	}
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	float: left;
+
+	height: 100%;
+	width: 15%;
+
+	background-color: #333;
+
+	.item {
+		font-family: 'Fredoka-Light', sans-serif;
+		font-size: 1.5em;
+
+		cursor: pointer;
+
+		text-align: center;
+		background-color: #555;
+		padding: 3px;
+		border: none;
+		
+		width: 100%;
+
+		color: #fff;
+
+		&:hover {
+			background-color: #444;
+		}
+	}
+
+	#title {
+		font-family: 'Fredoka-Light', sans-serif;
+		font-size: 3em;
+		text-align: center;
+		margin-top: 10px;
+		color: #fff;
+		padding: 10px;
+	}
+	#splash {
+		animation: mover 1s ease-in-out infinite;
+		font-family: 'Fredoka-Light', sans-serif;
+		font-size: 1em;
+		text-align: center;
+		margin-top: 10px;
+		color: #fc0;
+		padding: 10px;
+	}
+}
+
+
+#game_version {
+	position: fixed;
+
+	font-family: 'Fredoka-Light', sans-serif;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 10px;
+	color: #fff;
+	padding: 10px;
+
+	margin-bottom: 5px;
+	margin-right: 5px;
+	right: 0;
+	bottom: 0;
+}
+
+#latest_version {
+	position: fixed;
+
+	font-family: 'Fredoka-Light', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+	color: #fff;
+	padding: 10px;
+
+	margin-bottom: 2.125em;
+	margin-right: 5px;
+	right: 0;
+	bottom: 0;
+}
+
+.cmenu {
+	position: fixed;
+	z-index: 1000;
+	width: 150px;
+	background-color: #666; // screaming emoji!!! 666!! devil numberr!!!
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Fredoka-Light', sans-serif;
+	color: #fff;
+
+	transform: scale(0);
+	transform-origin: top left;
+	// transition: transform 200ms ease-in;
+
+	border: #000 1px;
+
+	.item {
+		padding: 8px 10px;
+		font-size: 15px;
+		color: #eee;
+		background-color: #555;
+		cursor: pointer;
+		border-radius: inherit;
+		text-align: center;
+
+		-moz-user-select: -moz-none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		&:hover {
+			background-color: #333;
+		}
+	}
+
+	&.visible {
+		transform: scale(1);
+		transition: transform 200ms ease-out;
+	}
+}
+
+.controls {
+	.item {
+		font-family: 'Fredoka-Light', sans-serif;
+		font-size: 1.5em;
+
+		cursor: pointer;
+
+		text-align: center;
+		background-color: #555;
+		padding: 3px;
+		border: none;
+
+		color: #fff;
+
+		&:hover {
+			background-color: #333;
+		}
+	}
+}
+
+.etf {
+	background-color: #555;
+	font-family: 'Fredoka-Light', sans-serif;
+	color: white;
+
+	overflow-y: scroll;
+
+	.purple {
+		color: purple;
+	}
+	.yellow {
+		color: yellow;
+	}
+}

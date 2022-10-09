@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <script src="/~partytown/partytown.js" defer></script> -->
+	<script src="./dist/bundle.js" defer></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Schematell</title>
+</head>
+<body>
+	<!-- Table with all the funny stuff -->
+	<table id="container" class="container"></table><br>
+
+	<!-- Controls -->
+	
+	<div id="controls" class="controls">
+		<button class="item" id="start">Start</button>
+		<button class="item" id="tick">Tick</button>
+		<button class="item" id="restart">Restart</button>
+		<button class="item" id="return">
+			<span class="material-icons">keyboard_return</span> Return
+		</button>
+		<img class="crispedges" id="cellnotifier" width="64" height="64" style="margin-left: 15px; bottom: 50%;"></img>
+		<p>(CTRL reverses this) Z - Change Cell | E/Q - Rotate Cell</p>
+	</div>
+
+
+	<!-- Context Menu -->
+	<div class="cmenu" id="cmenu">
+		<p class="title" id="cmenu-title"><em>Cell Name</em></p>
+		<ul class="item delete" id="cmenu-delete"><span class="material-icons">delete</span>Delete</ul>
+		<!-- <ul class="item modify"><span class="material-icons">description</span>Modify</ul> -->
+		<ul class="item close" id="cmenu-close"><span class="material-icons">close</span>Close</ul>
+	</div>
+</body>
+</html>
