@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schematell</title>
+    <script src="https://pixijs.download/v6.2.2/pixi.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <a href='https://schematell-js.calion.repl.co/accounts.html'>accounts</a>
+    <textarea id="editor" class="prettyprint lang-json" spellcheck="false"></textarea><br>
+
+    <button onclick="test_data()">Check data</button>
+    <pre id="data" style="color: #ffffff;">Output should appear here.... Maybe type something into the json box above?</pre>
+    <h1>IMPORTANT</h1>
+    <h4>Eclipse is bad at programming, accounts aren't secure. Do not use your secure password, put something like 12345</h4>
+    <form id="reg-form" style="display: inline-block; background-color: #222222; border-radius: 15px;">
+        <h1 style="font-size: 1.5rem;">Registration</h1>
+        <br/><input type="text" class="input" id="username" autocomplete="off" placeholder="Username" /><br/>
+        <input type="password" class="input" id="password" autocomplete="off" placeholder="Password" /><br/><br/>
+        <p style="color: #ff0000">Errors will appear here...</p>
+        <input type="submit" class="button" style="width: 100%" id="submit" value="Register" /><br/>
+    </form>&nbsp;&nbsp;
+    <form id="login-form" style="display: inline-block; background-color: #222222; border-radius: 15px;">
+        <h1 style="font-size: 1.5rem;">Login</h1>
+        <br/><input type="text" class="input" id="logusername" autocomplete="off" placeholder="Username" /><br/>
+        <input type="logpassword" class="input" id="password" autocomplete="off" placeholder="Password" /><br/><br/>
+        <p style="color: #ff0000">Errors will appear here...</p>
+        <input type="logsubmit" class="button" id="submit" value="Login" /><br/>
+    </form>
+</body>
+</html>

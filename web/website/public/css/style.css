@@ -1,0 +1,60 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+html {
+    background-color: #000000;
+}
+
+* {
+    text-align: center;
+    font-family: 'Cascadia Code', monospace;
+    color: #ffffff;
+}
+
+button {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    font-family: "Cascadia Code", monospace;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.input {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    font-family: "Cascadia Code", monospace;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.button {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    font-family: "Cascadia Code", monospace;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#editor {
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24rem; 
+    height: 12em;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #F8F8F2;
+    text-align: left;
+    background-color: #272822;
+}
